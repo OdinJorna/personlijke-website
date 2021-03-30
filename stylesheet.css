@@ -1,0 +1,335 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;    
+    line-height: 30px;
+    font-weight: 400;       
+    color: #DDE3CA;
+    background-color: #232815;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Alles over de navigatiebalk */
+
+#left-side {
+      height: 5em;
+      width: 100%;
+      background-color: #2F351C;
+      position: fixed;
+      z-index: 5;
+}
+
+#left-side ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 5;
+}
+
+#left-side li {
+    list-style: none;
+    padding: 10px;
+}
+
+#left-side a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 700; 
+}
+
+@media screen and (min-width: 1100px) {
+    #left-side {
+        height: 100vh;
+        width: 300px;
+        min-width: 200px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: fixed;
+    }
+
+    #left-side ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+        z-index: 2;
+    }
+    
+    #left-side li {
+        padding: 10px;
+        z-index: 2;
+    }
+
+    #right-side {
+        margin-left: 300px;
+        width: calc(100%-300px);
+
+    }
+}
+
+/* alles over de landingspagina */
+
+#right-side {
+    height: auto;
+    flex-grow: 1;
+    background-color:#232815;
+    color: #232815;
+}
+
+#hallo-blok {
+    flex: 1 1 0;
+    max-width: 52vh; /*500px*/
+    background-color: #DDE3CA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+#foto-blok {
+    flex: 1 0 0;
+    height: 100vh;
+    background-image: url(images/doggo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hallo {
+    font-size: 28px;
+    color: #492d31;
+    margin: 50% 15% 7% 15%;
+}
+  
+#hallo-titel {
+    font-size: 60px;
+    line-height: 94px;
+    font-weight: 800;
+    color: #5F6B38;
+    margin: 0px 15% 7% 15%;
+}
+  
+#hallo-info {
+    margin: 0px 15% 0px 15%;
+}
+
+@media screen and (min-width: 1100px) {
+    #hallo-titel {
+        font-size: 100px;
+    }
+}    
+
+
+/* sectie werkervaring */
+
+#container-2 {
+    color: #DDE3CA;
+    flex-direction: column;
+    margin: 5%;
+}
+
+#container-2 h2 {
+    margin-top: 2em;
+    font-size: 40px;;
+}
+
+@media screen and (min-width: 1100px) {
+    #container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    #cv-deel {
+        max-width: 40%;
+    }
+
+    #verhaaltje {
+        max-width: 40%;
+    }
+
+}    
+
+/* Sectie porfolio */
+
+.sectie-titel {
+    margin-top: 2em;
+    font-size: 40px;
+    color: #DDE3CA;
+}
+
+.portfolio-kaart {
+    background-color: #DDE3CA;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: #4a4a4a;
+    max-width: 65%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.portfolio-kaart-header:first-child, .card-content:first-child {
+border-top-left-radius: 0.25rem;
+border-top-right-radius: 0.25rem;
+}
+
+.portfolio-kaart-header:last-child, .card-content:last-child {
+border-bottom-left-radius: 0.25rem;
+border-bottom-right-radius: 0.25rem;
+}
+
+.portfolio-kaart-header {
+background-color: transparent;
+align-items: stretch;
+box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
+display: flex;
+}
+
+.portfolio-kaart-naam {
+align-items: center;
+color: #363636;
+display: flex;
+flex-grow: 1;
+font-weight: 700;
+padding: 0.75rem 1rem;
+}
+
+.portfolio-link {
+    text-decoration: none;
+}
+  
+.kaart-inhoud {
+    background-color: transparent;
+    padding: 1.5rem;
+}
+
+.inhoud {
+    padding: 1.5em;
+}
+
+#container-3 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 75px;
+    align-items: center;
+}
+
+@media screen and (min-width: 1100px) {
+    #container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .portfolio-kaart {
+        max-width: 35%;
+    }
+}
+
+
+/* Tijdlijn CSS effecten*/
+
+ul.timeline-holder {
+    margin: 0;
+    padding: 0 0 0 55px;
+}
+
+li.timeline-event {
+    margin: 0 0 42px 60px;
+    position: relative;
+    padding-top: 5px;
+    list-style: none;
+    transition: .3s;
+}
+
+li.timeline-event:hover {
+    color: #faefff;
+}
+
+li.timeline-event:before {
+    content: "";
+    width: 3px;
+    height: calc(100% - 20px);
+    position: absolute;
+    background-color: #f37b83;
+    left: -27px;
+    top: 53px;
+}
+
+li.timeline-event:last-child:before {
+    display: none;
+}
+
+li.timeline-event:last-child {
+    margin-bottom: 0;
+}
+
+li.timeline-event span.timeline-circle:after {
+    content: "";    
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: -5px;
+    top: 14px;
+    border-radius: 90%;
+    background-color: #f37b83;    
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+li.timeline-event:hover span.timeline-circle:after { 
+    opacity: 1;
+}
+
+span.timeline-circle {
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+span.timeline-circle:before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 90%;
+    border: 3px solid #f37b83;
+    position: absolute;
+    left: -16px;
+    top: 3px;
+    z-index: 1;
+    transition: .3s;
+}
+
+.timeline-event-date {
+    position: absolute;
+    left: -115px;
+    top: 2px;
+    transition: .3s;
+    color: #f37b83;
+    font-weight: 700;
+}
+
+li.timeline-event:hover .timeline-event-date {
+    transform: translateX(-10px);
+}
+
+.timeline-event-content {
+    line-height: 160%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* alles overd de sectie met podcast */
+
+#container-4 {
+    margin: 5em;
+}
