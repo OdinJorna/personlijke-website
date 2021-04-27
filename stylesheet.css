@@ -96,7 +96,7 @@ body {
 #foto-blok {
     flex: 1 0 0;
     height: 100vh;
-    background-image: url(images/foto kenia.jpg);
+    background-image: url(/personlijke-webstie/images/foto kenia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -124,7 +124,17 @@ body {
     #hallo-titel {
         font-size: 100px;
     }
-}    
+}
+
+@media screen and (max-width: 500px) {
+    #Hallo-titel {
+        font-size: 40px;
+    }
+    
+    #foto-block {
+        display: none;
+    }
+}
 
 
 /* sectie werkervaring */
